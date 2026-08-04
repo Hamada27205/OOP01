@@ -1,5 +1,6 @@
 ﻿using AssignmentOOP01.Struct;
 using AssignmentOOP01.Struct.Encapsulation;
+using System.Net;
 
 namespace AssignmentOOP01
 {
@@ -53,6 +54,77 @@ namespace AssignmentOOP01
             //Console.WriteLine(E1.GetDeliveryFee());
 
             #endregion
+
+            #region Q3
+
+            
+
+
+            //DeliveryCenter center = new DeliveryCenter();
+
+           
+            //    Console.WriteLine($"Enter Shipment {1} Data");
+
+            //    Console.Write("TrackingCode: ");
+            //    string code = Console.ReadLine();
+
+            //    Console.Write("Description: ");
+            //    string desc = Console.ReadLine();
+
+            //    Console.Write("Weight: ");
+            //    double weight = double.Parse(Console.ReadLine());
+
+            //    Console.Write("DeliveryFee: ");
+            //    decimal fee = decimal.Parse(Console.ReadLine());
+
+
+            //    Console.Write("City: ");
+            //    string city = Console.ReadLine();
+
+            //    Console.Write("Street: ");
+            //    string street = Console.ReadLine();
+
+            //    Console.Write("Building Number: ");
+            //    int building = int.Parse(Console.ReadLine());
+
+
+            //    DeliveryAddress address =
+            //        new DeliveryAddress(city, street, building);
+
+
+            //    Shipment newshipment =
+            //        new Shipment(code, desc, weight, fee, address);
+
+
+            //    bool added = center.AddShipment(newshipment);
+
+
+            //    if (added)
+            //        Console.WriteLine("Shipment added successfully.");
+            
+
+            //DeliveryAddress address1 = new DeliveryAddress("cairo", "Tahrir Street", 15);
+            //DeliveryAddress address2 = address1;
+            //address2.City = "Giza";
+            //address2.Street = "Faisal";
+            //address2.BuildingNumber = 20;
+            //Console.WriteLine(address1.GetFullAddress());
+            //Console.WriteLine(address2.GetFullAddress());
+
+
+            //Shipment shipment = new Shipment(
+            //    "SH-101",
+            //    "Laptop",
+            //    3,
+            //    100,
+            //    address1
+            //);
+
+            //shipment.PrintShipment();
+
+            #endregion
+            
+            // Q3 help with AI  المشكله معايا في الindexer لو لقيتي مشكله في السؤال يبقي المشكله بسبب indexer علشان انا مش فاهمه اوي 
 
         }
     }
