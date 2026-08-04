@@ -1,4 +1,5 @@
 ﻿using AssignmentOOP01.Struct;
+using AssignmentOOP01.Struct.Encapsulation;
 
 namespace AssignmentOOP01
 {
@@ -38,6 +39,18 @@ namespace AssignmentOOP01
             //Console.WriteLine(customer1.Name);
 
             #endregion
+
+            #endregion
+
+            #region Q2
+
+            //Shipment E1 = new Shipment();
+            //E1.SetDescription("Laptop Shipment");
+            //Console.WriteLine(E1.GetDescription());
+            //E1.SetWeight(5);
+            //Console.WriteLine(E1.GetWeight());
+            //E1.SetDeliveryFee(12);
+            //Console.WriteLine(E1.GetDeliveryFee());
 
             #endregion
 
