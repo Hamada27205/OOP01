@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssignmentOOP01.Struct.Encapsulation
 {
-    internal class Shipment
+    public class Shipment
     {
 
         #region Q2
@@ -67,125 +67,125 @@ namespace AssignmentOOP01.Struct.Encapsulation
 
         #region Q3
 
-    //    private string trackingCode;
-    //    private string description;
-    //    private double weight;
-    //    private decimal deliveryFee;
-    //    private DeliveryAddress destination;
+        //private string trackingCode;
+        //private string description;
+        //private decimal weight;
+        //private decimal deliveryFee;
+        //private DeliveryAddress destination;
 
-    //    public Shipment(string trackingCode)
-    //    {
-    //        this.trackingCode = trackingCode;
+        //public Shipment(string trackingCode)
+        //{
+        //    this.trackingCode = trackingCode;
 
-    //        Description = "Unknown";
-    //        Weight = 1;
-    //        DeliveryFee = 50;
-    //        Destination = new DeliveryAddress("Unknown", "Unknown", 0);
-    //    }
+        //    Description = "Unknown";
+        //    Weight = 1;
+        //    DeliveryFee = 50;
+        //    Destination = new DeliveryAddress("Unknown", "Unknown", 0);
+        //}
 
 
-    //    public Shipment(string trackingCode, string description, double weight, decimal deliveryFee, DeliveryAddress destination)
-    //    {
-    //        this.trackingCode = trackingCode;
+        //public Shipment(string trackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination)
+        //{
+        //    this.trackingCode = trackingCode;
 
-    //        Description = description;
-    //        Weight = weight;
-    //        DeliveryFee = deliveryFee;
-    //        Destination = destination;
-    //    }
+        //    Description = description;
+        //    Weight = weight;
+        //    DeliveryFee = deliveryFee;
+        //    Destination = destination;
+        //}
 
-    //    public string TrackingCode
-    //    { 
-    //        get { return trackingCode; }
-    //    }
+        //public string TrackingCode
+        //{
+        //    get { return trackingCode; }
+        //}
 
-    //    public string Description
-    //    {
-    //        get
-    //        {
-    //            return description;
-    //        }
+        //public string Description
+        //{
+        //    get
+        //    {
+        //        return description;
+        //    }
 
-    //        set
-    //        {
-    //            if (!string.IsNullOrWhiteSpace(value))
-    //            {
-    //                description = value;
-    //            }
-    //        }
-    //    }
+        //    set
+        //    {
+        //        if (!string.IsNullOrWhiteSpace(value))
+        //        {
+        //            description = value;
+        //        }
+        //    }
+        //}
 
-    //    public double Weight
-    //    {
-    //        get
-    //        {
-    //            return weight;
-    //        }
+        //public decimal Weight
+        //{
+        //    get
+        //    {
+        //        return weight;
+        //    }
 
-    //        set
-    //        {
-    //            if (value > 0)
-    //            {
-    //                weight = value;
-    //            }
-    //        }
-    //    }
-        
+        //    set
+        //    {
+        //        if (value > 0)
+        //        {
+        //            weight = value;
+        //        }
+        //    }
+        //}
 
-    //    public decimal DeliveryFee
-    //    {
-    //        get
-    //        {
-    //            return deliveryFee;
-    //        }
 
-    //        private set
-    //        {
-    //            if (value > 0)
-    //            {
-    //                deliveryFee = value;
-    //            }
-    //        }
-    //    }
+        //public decimal DeliveryFee
+        //{
+        //    get
+        //    {
+        //        return deliveryFee;
+        //    }
 
-    //    public DeliveryAddress Destination
-    //    {
-    //        get
-    //        {
-    //            return destination;
-    //        }
+        //    private set
+        //    {
+        //        if (value > 0)
+        //        {
+        //            deliveryFee = value;
+        //        }
+        //    }
+        //}
 
-    //        set
-    //        {
-    //            destination = value;
-    //        }
-    //    }
+        //public DeliveryAddress Destination
+        //{
+        //    get
+        //    {
+        //        return destination;
+        //    }
 
-    //    public decimal EstimatedCost
-    //    {
-    //get
-    //{
-    //    return DeliveryFee + (decimal)(Weight * 5);
-    //}
-    //    }
+        //    set
+        //    {
+        //        destination = value;
+        //    }
+        //}
 
-    //    public void UpdateDeliveryFee(decimal newFee)
-    //    {
-    //        if (newFee > 0)
-    //        {
-    //            DeliveryFee = newFee;
-    //        }
-    //    }
+        //public virtual decimal EstimatedCost
+        //{
+        //    get
+        //    {
+        //        return DeliveryFee + (Weight * 5);
+        //    }
+        //}
 
-    //    public void PrintShipment()
-    //    {
-    //        Console.WriteLine($"Tracking Code: {TrackingCode}");
-    //        Console.WriteLine($"Description: {Description}");
-    //        Console.WriteLine($"Weight: {Weight} KG");
-    //        Console.WriteLine($"Delivery Fee: {DeliveryFee} EGP");
-    //        Console.WriteLine($"Destination: {Destination.GetFullAddress()}");
-    //        Console.WriteLine($"Estimated Cost: {EstimatedCost} EGP");
-    //    }
+        //public void UpdateDeliveryFee(decimal newFee)
+        //{
+        //    if (newFee > 0)
+        //    {
+        //        DeliveryFee = newFee;
+        //    }
+        //}
+
+        //public void PrintShipment()
+        //{
+        //    Console.WriteLine($"Tracking Code: {TrackingCode}");
+        //    Console.WriteLine($"Description: {Description}");
+        //    Console.WriteLine($"Weight: {Weight} KG");
+        //    Console.WriteLine($"Delivery Fee: {DeliveryFee} EGP");
+        //    Console.WriteLine($"Destination: {Destination.GetFullAddress()}");
+        //    Console.WriteLine($"Estimated Cost: {EstimatedCost} EGP");
+        //}
 
         #endregion
 

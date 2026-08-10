@@ -9,11 +9,26 @@ namespace AssignmentOOP01
 {
     //internal class DeliveryCenter
     //{
+    //    private string centerName;
 
+    //    public string CenterName
+    //    {
+    //        get { return centerName; }
+    //        set
+    //        {
+    //            if (string.IsNullOrWhiteSpace(value))
+    //            {
+    //                throw new ArgumentException("Center Name cannot be empty.");
+    //                return;
+    //            }
+
+    //            centerName = value;
+    //        }
+    //    }
     //    private Shipment[] shipments;
     //    public DeliveryCenter()
     //    {
-    //        shipments = new Shipment[10];
+    //        shipments = new Shipment[20];
     //    }
 
     //    public bool AddShipment(Shipment shipment)
@@ -70,6 +85,36 @@ namespace AssignmentOOP01
 
     //    }
 
+    //    public bool RemoveShipment(string trackingCode)
+    //    {
+    //        for (int i = 0; i < shipments.Length; i++)
+    //        {
+    //            if (shipments[i] != null &&
+    //                shipments[i].TrackingCode == trackingCode)
+    //            {
+    //                shipments[i] = null;
+    //                return true;
+    //            }
+    //        }
+
+    //        return false;
+    //    }
+
+
+    //    public void PrintAllShipments()
+    //    {
+    //        Console.WriteLine("----------------------------------------");
+    //        Console.WriteLine($"Delivery Center : {CenterName}");
+    //        Console.WriteLine("----------------------------------------");
+
+    //        for (int i = 0; i < shipments.Length; i++)
+    //        {
+    //            if (shipments[i] != null)
+    //            {
+    //                shipments[i].PrintShipment();
+    //            }
+    //        }
+    //    }
 
     //}
 }
