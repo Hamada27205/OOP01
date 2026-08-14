@@ -177,7 +177,29 @@ namespace AssignmentOOP01.Struct.Encapsulation
         //    }
         //}
 
-        //public void PrintShipment()
+
+        //public void UpdateWeight(decimal newWeight)
+        //{
+        //    if (newWeight <= 0)
+        //    {
+        //        Console.WriteLine("newWeight must greater than 0");
+        //        return;
+        //    }
+        //    Weight = newWeight;
+        //}
+
+        //public void UpdateWeight(decimal newWeight, decimal extraPackingWeight)
+        //{
+        //    if (newWeight <= 0 || extraPackingWeight <= 0)
+        //    {
+        //        Console.WriteLine("newWeight and extraPackingWeight must greater than 0");
+        //        return;
+        //    }
+            
+        //    Weight = newWeight + extraPackingWeight;
+        //}
+
+        //public virtual void PrintShipment()
         //{
         //    Console.WriteLine($"Tracking Code: {TrackingCode}");
         //    Console.WriteLine($"Description: {Description}");
@@ -185,6 +207,7 @@ namespace AssignmentOOP01.Struct.Encapsulation
         //    Console.WriteLine($"Delivery Fee: {DeliveryFee} EGP");
         //    Console.WriteLine($"Destination: {Destination.GetFullAddress()}");
         //    Console.WriteLine($"Estimated Cost: {EstimatedCost} EGP");
+
         //}
 
         #endregion

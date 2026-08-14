@@ -13,9 +13,9 @@ namespace AssignmentOOP01
 
     //    private decimal extraFee;
 
-    //    public ExpressShipment(string trackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination , decimal extraFee) : base(trackingCode, description, weight, deliveryFee, destination)
+    //    public ExpressShipment(string trackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination, decimal extraFee) : base(trackingCode, description, weight, deliveryFee, destination)
     //    {
-    //       ExtraFee = extraFee;
+    //        ExtraFee = extraFee;
     //    }
 
     //    public decimal ExtraFee
@@ -35,12 +35,19 @@ namespace AssignmentOOP01
 
     //    }
 
-    //    public override decimal EstimatedCost 
-    //    { 
+    //    public override decimal EstimatedCost
+    //    {
     //        get
     //        {
     //            return DeliveryFee + (Weight * 5) + ExtraFee;
     //        }
+    //    }
+
+
+    //    public override void PrintShipment()
+    //    {
+    //        base.PrintShipment();
+    //        Console.WriteLine($" Extra Fee : {ExtraFee} \n Estimated Cost : {EstimatedCost}");
     //    }
 
     //}

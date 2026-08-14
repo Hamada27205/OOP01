@@ -60,5 +60,16 @@ namespace AssignmentOOP01
     //        }
     //    }
 
+    //    public virtual void GenerateCustomsReport()
+    //    {
+    //        Console.WriteLine("Customs Report for International Shipment");
+    //    }
+
+    //    public override void PrintShipment()
+    //    {
+    //        base.PrintShipment();
+    //        Console.WriteLine($"Destination Country : {DestinationCountry}\n Customs Fee : {CustomsFee} \n Estimated Cost : {EstimatedCost}");
+    //    }
+
     //}
 }

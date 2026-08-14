@@ -58,7 +58,7 @@ namespace AssignmentOOP01
             #region Q3
 
 
-
+            //Driver driver = new Driver(2, "Ahmed Ali" , "01030320746");
 
             //DeliveryCenter center = new DeliveryCenter();
             //string centerName;
@@ -75,6 +75,12 @@ namespace AssignmentOOP01
 
             //} while (string.IsNullOrWhiteSpace(centerName));
             //center.CenterName = centerName;
+
+            //center.Driver = driver;
+
+            //Console.WriteLine($"Driver ID: {center.Driver.DriverId}");
+            //Console.WriteLine($"Driver Name: {center.Driver.FullName}");
+            //Console.WriteLine($"Driver Phone: {center.Driver.PhoneNumber}");
 
             //Console.WriteLine("---------------------");
 
@@ -207,6 +213,36 @@ namespace AssignmentOOP01
 
             //center.PrintAllShipments();
 
+            //DeliveryHelper.PrintShipmentDetails(standardShipment);
+            //DeliveryHelper.PrintShipmentDetails(expressShipment);
+            //DeliveryHelper.PrintShipmentDetails(internationalShipment);
+
+            //Console.WriteLine("Updating Weight...");
+
+            //Console.WriteLine($"Original Weight : {standardShipment.Weight} KG");
+
+            //standardShipment.UpdateWeight(5);
+
+            //Console.WriteLine($"Updated Weight : {standardShipment.Weight} KG");
+
+            //standardShipment.UpdateWeight(5, 0.5m);
+
+            //Console.WriteLine($"Updated Weight After Packing : {standardShipment.Weight} KG");
+
+            //Console.WriteLine("---------------------");
+
+            //Shipment[] mixedShipments =
+            //{
+            //    standardShipment,
+            //    expressShipment,
+            //    internationalShipment
+            // };
+
+            //foreach (Shipment s in mixedShipments)
+            //{
+            //    s.PrintShipment();
+            //}
+
             //// Search
             //Console.Write("Enter Tracking Code to Search: ");
             //string searchCode = Console.ReadLine();
@@ -219,7 +255,7 @@ namespace AssignmentOOP01
             //    Console.WriteLine("Shipment not found.");
 
 
-           
+
             //Console.Write("Enter Tracking Code to Remove: ");
             //string removeCode = Console.ReadLine();
 
@@ -291,7 +327,14 @@ namespace AssignmentOOP01
             //    address1
             //);
 
-            //shipment.PrintShipment();
+            //shipment.PrintShipment// CompletedShipment is a sealed class,
+            // so no class can inherit from it.
+
+            // GenerateCustomsReport() is a sealed override in PriorityInternationalShipment,
+            // so derived classes cannot override it again.
+
+
+
 
             #endregion
 
