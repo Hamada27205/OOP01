@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssignmentOOP01.Struct.Encapsulation
 {
-    public class Shipment
+    public abstract class Shipment
     {
 
         #region Q2
@@ -67,148 +67,138 @@ namespace AssignmentOOP01.Struct.Encapsulation
 
         #region Q3
 
-        //private string trackingCode;
-        //private string description;
-        //private decimal weight;
-        //private decimal deliveryFee;
-        //private DeliveryAddress destination;
+        private string trackingCode;
+        private string description;
+        private decimal weight;
+        private decimal deliveryFee;
+        private DeliveryAddress destination;
 
-        //public Shipment(string trackingCode)
-        //{
-        //    this.trackingCode = trackingCode;
+        public Shipment(string trackingCode)
+        {
+            this.trackingCode = trackingCode;
 
-        //    Description = "Unknown";
-        //    Weight = 1;
-        //    DeliveryFee = 50;
-        //    Destination = new DeliveryAddress("Unknown", "Unknown", 0);
-        //}
-
-
-        //public Shipment(string trackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination)
-        //{
-        //    this.trackingCode = trackingCode;
-
-        //    Description = description;
-        //    Weight = weight;
-        //    DeliveryFee = deliveryFee;
-        //    Destination = destination;
-        //}
-
-        //public string TrackingCode
-        //{
-        //    get { return trackingCode; }
-        //}
-
-        //public string Description
-        //{
-        //    get
-        //    {
-        //        return description;
-        //    }
-
-        //    set
-        //    {
-        //        if (!string.IsNullOrWhiteSpace(value))
-        //        {
-        //            description = value;
-        //        }
-        //    }
-        //}
-
-        //public decimal Weight
-        //{
-        //    get
-        //    {
-        //        return weight;
-        //    }
-
-        //    set
-        //    {
-        //        if (value > 0)
-        //        {
-        //            weight = value;
-        //        }
-        //    }
-        //}
+            Description = "Unknown";
+            Weight = 1;
+            DeliveryFee = 50;
+            Destination = new DeliveryAddress("Unknown", "Unknown", 0);
+        }
 
 
-        //public decimal DeliveryFee
-        //{
-        //    get
-        //    {
-        //        return deliveryFee;
-        //    }
+        public Shipment(string trackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination)
+        {
+            this.trackingCode = trackingCode;
 
-        //    private set
-        //    {
-        //        if (value > 0)
-        //        {
-        //            deliveryFee = value;
-        //        }
-        //    }
-        //}
+            Description = description;
+            Weight = weight;
+            DeliveryFee = deliveryFee;
+            Destination = destination;
+        }
 
-        //public DeliveryAddress Destination
-        //{
-        //    get
-        //    {
-        //        return destination;
-        //    }
+        public string TrackingCode
+        {
+            get { return trackingCode; }
+        }
 
-        //    set
-        //    {
-        //        destination = value;
-        //    }
-        //}
+        public string Description
+        {
+            get
+            {
+                return description;
+            }
 
-        //public virtual decimal EstimatedCost
-        //{
-        //    get
-        //    {
-        //        return DeliveryFee + (Weight * 5);
-        //    }
-        //}
+            set
+            {
+                if (!string.IsNullOrWhiteSpace(value))
+                {
+                    description = value;
+                }
+            }
+        }
 
-        //public void UpdateDeliveryFee(decimal newFee)
-        //{
-        //    if (newFee > 0)
-        //    {
-        //        DeliveryFee = newFee;
-        //    }
-        //}
+        public decimal Weight
+        {
+            get
+            {
+                return weight;
+            }
+
+            set
+            {
+                if (value > 0)
+                {
+                    weight = value;
+                }
+            }
+        }
 
 
-        //public void UpdateWeight(decimal newWeight)
-        //{
-        //    if (newWeight <= 0)
-        //    {
-        //        Console.WriteLine("newWeight must greater than 0");
-        //        return;
-        //    }
-        //    Weight = newWeight;
-        //}
+        public decimal DeliveryFee
+        {
+            get
+            {
+                return deliveryFee;
+            }
 
-        //public void UpdateWeight(decimal newWeight, decimal extraPackingWeight)
-        //{
-        //    if (newWeight <= 0 || extraPackingWeight <= 0)
-        //    {
-        //        Console.WriteLine("newWeight and extraPackingWeight must greater than 0");
-        //        return;
-        //    }
+            private set
+            {
+                if (value > 0)
+                {
+                    deliveryFee = value;
+                }
+            }
+        }
+
+        public DeliveryAddress Destination
+        {
+            get
+            {
+                return destination;
+            }
+
+            set
+            {
+                destination = value;
+            }
+        }
+
+        public abstract decimal EstimatedCost
+        {
+            get;
             
-        //    Weight = newWeight + extraPackingWeight;
-        //}
+        }
 
-        //public virtual void PrintShipment()
-        //{
-        //    Console.WriteLine($"Tracking Code: {TrackingCode}");
-        //    Console.WriteLine($"Description: {Description}");
-        //    Console.WriteLine($"Weight: {Weight} KG");
-        //    Console.WriteLine($"Delivery Fee: {DeliveryFee} EGP");
-        //    Console.WriteLine($"Destination: {Destination.GetFullAddress()}");
-        //    Console.WriteLine($"Estimated Cost: {EstimatedCost} EGP");
+        public void UpdateDeliveryFee(decimal newFee)
+        {
+            if (newFee > 0)
+            {
+                DeliveryFee = newFee;
+            }
+        }
 
-        //}
+
+        public void UpdateWeight(decimal newWeight)
+        {
+            if (newWeight <= 0)
+            {
+                Console.WriteLine("newWeight must greater than 0");
+                return;
+            }
+            Weight = newWeight;
+        }
+
+        public void UpdateWeight(decimal newWeight, decimal extraPackingWeight)
+        {
+            if (newWeight <= 0 || extraPackingWeight <= 0)
+            {
+                Console.WriteLine("newWeight and extraPackingWeight must greater than 0");
+                return;
+            }
+
+            Weight = newWeight + extraPackingWeight;
+        }
+
+        public abstract void PrintShipment();
+        
 
         #endregion
 

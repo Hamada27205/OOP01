@@ -1,4 +1,5 @@
-﻿using AssignmentOOP01.Struct;
+﻿using AssignmentOOP01.Interfaces;
+using AssignmentOOP01.Struct;
 using AssignmentOOP01.Struct.Encapsulation;
 using System.Net;
 
@@ -58,7 +59,7 @@ namespace AssignmentOOP01
             #region Q3
 
 
-            //Driver driver = new Driver(2, "Ahmed Ali" , "01030320746");
+            //Driver driver = new Driver(2, "Ahmed Ali", "01030320746");
 
             //DeliveryCenter center = new DeliveryCenter();
             //string centerName;
@@ -207,9 +208,7 @@ namespace AssignmentOOP01
 
             //Console.WriteLine("---------------------");
 
-            //center.AddShipment(standardShipment);
-            //center.AddShipment(expressShipment);
-            //center.AddShipment(internationalShipment);
+
 
             //center.PrintAllShipments();
 
@@ -266,9 +265,7 @@ namespace AssignmentOOP01
 
 
             //center.PrintAllShipments();
-
             //Console.WriteLine("---------------------");
-
 
             //Console.WriteLine($"Enter Shipment {1} Data");
 
@@ -300,7 +297,7 @@ namespace AssignmentOOP01
 
 
             //Shipment newshipment =
-            //    new Shipment(code, desc, weight, fee, address);
+            //    new StandardShipment(code, desc, weight, fee, address);
 
 
             //bool added = center.AddShipment(newshipment);
@@ -335,10 +332,104 @@ namespace AssignmentOOP01
 
 
 
+            //            center.AddShipment(standardShipment);
+            //            center.AddShipment(expressShipment);
+            //            center.AddShipment(internationalShipment);
+
+            //            center.PrintAllShipments();
+
+            //            Console.WriteLine("==========================================");
+            //            Console.WriteLine("Tracking Status");
+            //            Console.WriteLine("==========================================");
+
+            //            center.PrintTrackingStatuses();
+
+            //            Console.WriteLine("==========================================");
+            //            Console.WriteLine("Insurance");
+            //            Console.WriteLine("==========================================");
+
+            //            center.CalculateInsurance();
+
+            //            Console.WriteLine("==========================================");
+
+            //            ITrackable[] trackableShipments =
+            //            {
+            //    standardShipment,
+            //    expressShipment,
+            //    internationalShipment
+            //};
+
+            //            foreach (ITrackable item in trackableShipments)
+            //            {
+            //                Console.WriteLine(item.GetTrackingStatus());
+            //            }
+
+            //            IInsurable[] insurableShipments =
+            //            {
+            //    standardShipment,
+            //    expressShipment,
+            //    internationalShipment
+            //};
+
+            //            foreach (IInsurable item in insurableShipments)
+            //            {
+            //                Console.WriteLine(item.CalculateInsurance());
+            //            }
+
+            //            Console.WriteLine("==========================================");
+            //            Console.WriteLine("Interface Polymorphism Demonstrated Successfully.");
+
+
 
             #endregion
 
             // Q3 help with AI  المشكله معايا في الindexer لو لقيتي مشكله في السؤال يبقي المشكله بسبب indexer علشان انا مش فاهمه اوي 
+
+            #region Q1 OOP04
+
+            // a) Abstraction is the process of hiding implementation details and showing only the essential features of an object
+            // b) Because Abstraction is one of the fundamental four pillars of Object-Oriented Programming. It helps us hide unnecessary implementation details and expose only the essential functionality, which makes the code easier to use and understand.
+
+            #endregion
+
+            #region Q2 OOP04
+
+
+            /*
+            a) 
+             Abstract Class:
+
+              Can contain abstract methods and implemented methods
+              Can contain fields/state
+              A class can inherit from only one abstract/base class
+              
+             Interface:
+              
+              Defines a contract that a class must follow
+              A class can implement multiple interfaces
+              Interfaces are useful for defining common behavior between classes that may not have the same base class
+                           
+             
+             */
+
+            /*
+
+             b)
+            Choose an Interface when you want to define a common contract/behavior that can be implemented by different classes  
+            especially when those classes may already inherit from different classes
+            also, use an Interface when a class needs to implement multiple behaviors because C# allows a class to implement multiple interfaces
+
+             */
+
+            /*
+             c)
+             No, a class cannot inherit from multiple abstract classes because C# supports single class inheritance
+
+               Yes, a class can implement multiple interfaces
+
+             */
+
+            #endregion
 
         }
     }

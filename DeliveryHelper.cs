@@ -10,10 +10,10 @@ namespace AssignmentOOP01
     internal static class DeliveryHelper
     {
 
-        //public static void PrintShipmentDetails(Shipment shipment)
-        //{
-        //    shipment.PrintShipment();
-        //}
+        public static void PrintShipmentDetails(Shipment shipment)
+        {
+            shipment.PrintShipment();
+        }
 
     }
 }

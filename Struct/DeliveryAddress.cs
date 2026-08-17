@@ -31,32 +31,32 @@ namespace AssignmentOOP01.Struct
 
     #region Q3
 
-    //public struct DeliveryAddress
-    //{
+    public struct DeliveryAddress
+    {
 
-    //    public string City;
-    //    public string Street;
-    //    public int BuildingNumber;
-
-
-    //    // Constructor
-    //    public DeliveryAddress(string city, string street, int buildingNumber)
-    //    {
-
-    //        City = city;
-    //        Street = street;
-    //        BuildingNumber = buildingNumber;
-
-    //    }
-
-    //    // method that return
-    //    public string GetFullAddress()
-    //    {
-    //        return BuildingNumber + " " + Street + ", " + City;
-    //    }
+        public string City;
+        public string Street;
+        public int BuildingNumber;
 
 
-    //}
+        // Constructor
+        public DeliveryAddress(string city, string street, int buildingNumber)
+        {
+
+            City = city;
+            Street = street;
+            BuildingNumber = buildingNumber;
+
+        }
+
+        // method that return
+        public string GetFullAddress()
+        {
+            return BuildingNumber + " " + Street + ", " + City;
+        }
+
+
+    }
 
     #endregion
 
